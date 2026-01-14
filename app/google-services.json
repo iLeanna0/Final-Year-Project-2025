@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "169121835884",
+    "project_id": "cooksmart-c022b",
+    "storage_bucket": "cooksmart-c022b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169121835884:android:cc2db4ee6caae174982149",
+        "android_client_info": {
+          "package_name": "com.example.cooksmart3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuBmaH57zNyFlcAi4uKyDOc_sS47dRnyE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

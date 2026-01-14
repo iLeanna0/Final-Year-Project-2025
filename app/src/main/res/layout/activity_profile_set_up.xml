@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background_very_light_blue">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:padding="2dp"
+            android:src="@drawable/baseline_add_a_photo_24"
+            android:contentDescription="Profile Picture"
+            android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/choosePhotoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Choose Photo" />
+
+        <Button
+            android:id="@+id/takePictureButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Take Photo" />
+    </LinearLayout>
+
+        <!-- Username Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Your Username:"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/nameEditText"
+                    android:hint="Username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:inputType="text" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Your Diet:"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <RadioGroup
+                    android:id="@+id/dietRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/dietOmnivore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Omnivore (Meat Eater)" />
+
+                    <RadioButton
+                        android:id="@+id/dietVegetarian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vegetarian" />
+
+                    <RadioButton
+                        android:id="@+id/dietVegan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vegan" />
+
+                    <RadioButton
+                        android:id="@+id/dietPescatarian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pescatarian" />
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select any allergies:"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <CheckBox android:id="@+id/allergyNuts" android:text="Nuts" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+                <CheckBox android:id="@+id/allergyDairy" android:text="Dairy" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+                <CheckBox android:id="@+id/allergyGluten" android:text="Gluten" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+                <CheckBox android:id="@+id/allergyFish" android:text="Fish" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+                <CheckBox android:id="@+id/allergyShellfish" android:text="Shellfish" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+                <CheckBox android:id="@+id/allergyEggs" android:text="Eggs" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+                <CheckBox android:id="@+id/allergySoy" android:text="Soy" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+                <CheckBox android:id="@+id/allergyWheat" android:text="Wheat" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/saveProfileButton"
+            android:text="Save Profile"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title="Profile"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_kitchen"
+        android:icon="@drawable/ic_kitchen"
+        android:title="My Kitchen"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_favorites"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favourites"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_recipes"
+        android:icon="@drawable/ic_search"
+        android:title="Recipes"
+        app:showAsAction="ifRoom" />
+</menu>
